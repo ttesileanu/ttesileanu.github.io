@@ -383,6 +383,21 @@ footer.sticky-bottom {
 // Publications
 
 .publications {
+  .photo {
+    height: 150px;
+    width: 150px;
+    margin-right: 10px;
+    overflow: hidden;
+    text-align: center;
+    .photo-image {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  #no-photo {
+    height: 0px;
+    border: none;
+  }
   margin-top: 2rem;
   h1 {
     color: var(--global-theme-color);
