@@ -23,7 +23,7 @@ let setTheme = (theme) =>  {
   if (typeof medium_zoom !== 'undefined') {
     medium_zoom.update({
       background: getComputedStyle(document.documentElement)
-          .getPropertyValue('--global-bg-color') + 'ee',  // + 'ee' for trasparency.
+          .getPropertyValue('--global-bg-color') + 'ee',  // + 'ee' for transparency.
     })
   }
 };
@@ -33,7 +33,7 @@ let transTheme = () => {
   document.documentElement.classList.add("transition");
   window.setTimeout(() => {
     document.documentElement.classList.remove("transition");
-  }, 500)
+  }, 10)
 }
 
 
