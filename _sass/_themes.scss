@@ -23,6 +23,13 @@
     padding-top: 12px;
     display : block;
   }
+
+  .light-image {
+    display : block;
+  }
+  .dark-image {
+    display : none;
+  }
 }
 
 html[data-theme='dark'] {
@@ -45,5 +52,12 @@ html[data-theme='dark'] {
   }
   .fa-moon {
     display : none;
+  }
+
+  .light-image {
+    display : none;
+  }
+  .dark-image {
+    display : block;
   }
 }

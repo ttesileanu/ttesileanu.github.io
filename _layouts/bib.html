@@ -4,9 +4,47 @@
 <div class="row">
   <div class="col-sm-3 d-flex justify-content-center">
     {%- if entry.image -%}
-    <div class="photo"><img class="photo-image" src="{{entry.image}}" /></div>
+      <!-- check for dark version of the image -->
+      {%- if entry.dark_image -%}
+        {%- assign dark_image = entry.dark_image -%}
+      {%- else -%}
+        <!-- automatically generate dark version name by adding '-dark' before ext -->
+        {%- assign image_parts = entry.image | split: '.' -%}
+        {%- assign n_parts = image_parts | size -%}
+        {%- if n_parts > 1 -%}
+          {%- assign change_idx = n_parts | minus: 2 -%}
+          {%- if change_idx > 1 -%}
+            {%- assign n_root = change_idx | minus: 1 -%}
+          {%- else -%}
+            {%- assign n_root = 0 -%}
+          {%- endif -%}
+          {%- assign image_root = image_parts | slice: 0, n_root -%}
+          {%- assign darkened_name = image_parts[change_idx] | append: '-dark' | split: '.' -%}
+          {%- assign ext_idx = n_parts | minus: 1 -%}
+          {%- assign image_ext = image_parts | slice: ext_idx -%}
+          {%- assign dark_image_parts = image_root | concat: darkened_name | concat: image_ext %}
+          {%- assign image_parts[change_idx] = image_parts[change_idx] | append: '-dark' -%}
+          {%- assign dark_image = dark_image_parts | join: '.' -%}
+        {%- else -%}
+          <!-- the file had no extension to start with -->
+          {%- assign dark_image = entry.image | append: '-dark' -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- assign full_dark_image = dark_image | prepend: '/assets/img/pub/' -%}
+      {%- assign dark_file_exists = false -%}
+      {%- for static_file in site.static_files -%}
+        {%- if static_file.path == full_dark_image -%}
+          {%- assign dark_file_exists = true -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- if dark_file_exists -%}
+        <div class="photo"><img class="photo-image light-image" src="{{entry.image | prepend: '/assets/img/pub/'}}" />
+        <img class="photo-image dark-image" src="{{full_dark_image}}" /></div>
+      {%- else -%}
+        <div class="photo"><img class="photo-image" src="{{entry.image | prepend: '/assets/img/pub/'}}" /></div>
+      {%- endif -%}
     {%- else -%}
-    <div class="photo" id="no-photo" />
+      <div class="photo" id="no-photo" />
     {%- endif -%}
   </div>
 
