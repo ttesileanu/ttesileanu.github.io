@@ -19,4 +19,4 @@ social: true  # includes social icons at the bottom of the page
 
 My interests lie in normative modeling of brain circuits, where some optimality criterion based on biologically relevant tasks is used to predict neural-circuit architectures, in particular those that use biologically plausible learning rules.
 
-A theoretical physicst by training, I approach neuroscience questions with an emphasis on overarching principles and precise, quantitative modeling. In what now seems like a different life, I worked in theoretical high-energy physics, focusing on various aspects of the AdS/CFT duality in string theory.
+A theoretical physicist by training, I approach neuroscience questions with an emphasis on overarching principles and precise, quantitative modeling. In what now seems like a different life, I worked in theoretical high-energy physics, focusing on various aspects of the AdS/CFT duality in string theory.
