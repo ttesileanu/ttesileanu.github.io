@@ -1,17 +1,32 @@
 {%- assign path = include.path | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".tiff" -%}
-
 <figure>
-
   <picture>
-    {% for i in site.imagemagick.widths -%}
+    {%- for i in site.imagemagick.widths -%}
       <source media="(max-width: {{ i }}px)" srcset="{{ path | relative_url }}-{{ i }}.webp" />
-    {% endfor -%}
-
+    {%- endfor -%}
     <!-- Fallback to the original file -->
-    <img {% if include.class %}class="{{ include.class }}"{% endif %} src="{{ include.path | relative_url }}" {% if include.alt %}alt="{{ include.alt }}"{% endif %} {% if include.title %}title="{{ include.title }}"{% endif %} {% if include.zoomable %}data-zoomable{% endif %} />
-
+    {%- if include.dark_path -%}
+    <img class="{{ include.class }} light-image" src="{{ include.path | relative_url }}" {% if include.alt
+      %}alt="{{ include.alt }}" {% endif %} {% if include.title %}title="{{ include.title }}" {% endif %} {% if
+      include.zoomable %}data-zoomable{% endif %} />
+    {%- else -%}
+    <img {% if include.class %}class="{{ include.class }}" {% endif %} src="{{ include.path | relative_url }}" {% if
+      include.alt %}alt="{{ include.alt }}" {% endif %} {% if include.title %}title="{{ include.title }}" {% endif %} {%
+      if include.zoomable %}data-zoomable{% endif %} />
+    {%- endif -%}
   </picture>
-
+  {%- if include.dark_path -%}
+  <picture>
+  {%- assign dark_path = include.dark_path | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".tiff" -%}
+  {% for i in site.imagemagick.widths -%}
+    <source media="(max-width: {{ i }}px) and (prefers-color-scheme: dark)"
+      srcset="{{ dark_path | relative_url }}-{{ i }}.webp" />
+    {% endfor -%}
+    <!-- Fallback to the original file -->
+    <img class="{{ include.class }} dark-image" src="{{ include.dark_path | relative_url }}" {% if include.alt
+      %}alt="{{ include.alt }}" {% endif %} {% if include.title %}title="{{ include.title }}" {% endif %} {% if
+      include.zoomable %}data-zoomable{% endif %} />
+  </picture>
+  {%- endif -%}
   {%- if include.caption -%}<figcaption class="caption">{{ include.caption }}</figcaption>{%- endif %}
-
 </figure>
