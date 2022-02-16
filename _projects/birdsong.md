@@ -57,7 +57,7 @@ longer time scale, this is stored in the HVC-RA synapses.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-10 mt-3 mt-md-0">
-        {%- include figure.html path="assets/img/project_birdsong_circuits.png" dark_path="assets/img/project_birdsong_circuits-dark.png" title="Biological circuit, and our model" zoomable=true -%}
+        {%- include figure.html path="assets/img/project_birdsong_circuits.png" dark_path="assets/img/project_birdsong_circuits-dark.png" title="Biological circuit, and our model" class="img-fluid rounded" zoomable=true -%}
     </div>
 </div>
 
