@@ -41,9 +41,11 @@ keep_files:
 
 # Gems
 plugins:
+  - jekyll-email-protect
   - jekyll-paginate-v2
   - jekyll/scholar
   - jekyll-imagemagick
+  - jekyll-twitter-plugin
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
