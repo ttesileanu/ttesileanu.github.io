@@ -1,37 +1,46 @@
----
-layout: parse
----
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html lang="en-us">
 
-  <!-- Head -->
-  <head>
-  {%- if page.redirect -%}
-    <meta http-equiv="refresh" content="3; url={{ site.baseurl | prepend: site.url }}/" />
-  {%- endif -%}
   {% include head.html %}
-  </head>
 
-  <!-- Body -->
-  <body class="{%- if site.navbar_fixed -%}fixed-top-nav{%- endif -%} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+  <body>
 
-    <!-- Header -->
-    {%- include header.html %}
+    {% include sidebar.html %}
 
-    <!-- Content -->
-    <div class="container mt-5">
-      {{ content }}
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+            <small>{{ site.tagline }}</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        {{ content }}
+        {%- if page.social %}
+        <!-- Social -->
+        <div class="social">
+          <div class="contact-icons">
+          {% include social.html %}
+          </div>
+
+          <div class="contact-note">
+            {{ site.contact_note }}
+          </div>
+          
+        </div>
+        {%- endif %}
+      </div>
     </div>
 
-    <!-- Footer -->
-    {%- include footer.html %}
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
-    <!-- JavaScripts -->
-    {% include scripts/jquery.html %}
-    {% include scripts/bootstrap.html %}
-    {% include scripts/masonry.html %}
-    {% include scripts/misc.html %}
+    <script src='{{ site.baseurl }}/public/js/script.js'></script>
+    
     {% include scripts/mathjax.html %}
-    {% include scripts/analytics.html %}
   </body>
 </html>

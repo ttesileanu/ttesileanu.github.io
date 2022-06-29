@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 ---
 
 <!-- about.html -->
@@ -15,7 +15,7 @@ layout: default
           {% if page.profile -%}
           <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
             {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+              {%- assign profile_image_path = page.profile.image | prepend: 'public/img/' -%}
               {% include figure.html 
               path=profile_image_path 
               class="img-fluid z-dept-1 rounded"
@@ -41,19 +41,4 @@ layout: default
             <!-- Selected papers -->
             {%- include selected_papers.html %}
           {%- endif %}
-          {%- if page.social %}
-          <!-- Social -->
-          <div class="social">
-            <div class="contact-icons">
-            {% include social.html %}
-            </div>
-
-            <div class="contact-note">
-              {{ site.contact_note }}
-            </div>
-            
-          </div>
-          {%- endif %}
         </article>
-
-</div>
