@@ -7,8 +7,8 @@ social: true  # includes social icons at the bottom of the page
 
 <div class="posts">
   <div class="post" id="springContainer" style="position: relative; width: 75%; margin-left: auto; margin-right: auto;">
-    <div id="sketchDescription" style="background-color: rgba(255, 255, 255, 0.98); position: absolute; left: 1em; top: 0px; right: 1em; bottom: 1em; padding: 1em; visibility: hidden; border-width: 3px; border-style: solid; overflow: scroll;">
-      <h3>Spring simulation: viscosity, gravity, non-elastic collisions</h3>
+    <div id="sketchDescription" style="background-color: rgba(255, 255, 255, 0.98); position: absolute; left: 1em; top: 2em; right: 1em; bottom: 1em; padding: 1em; padding-top:0px; visibility: hidden; border-width: 3px; border-style: solid; overflow: scroll;">
+      <h4>Spring simulation</h4>
       <small>
       <table class="sketchTable">
         <tr>
@@ -47,7 +47,7 @@ social: true  # includes social icons at the bottom of the page
   <div class="post">
     <p>I'm an Associated Research Scientist at the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-neuroscience/">Center for Computational Neuroscience</a> within the <a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a>. I work on building biologically plausible versions of statistical algorithms, with an emphasis on temporal correlations.</p>
 
-    <p>Contact me using one of the links below – preferably email – or use the navigation menu at the top/left.</p>
+    <p>Use the navigation menu at the top/left to learn more, or contact me using one of the links below.</p>
   </div>
 </div>
 
