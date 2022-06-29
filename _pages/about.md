@@ -15,3 +15,11 @@ profile:
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+
+I am a theoretical physicist turned neuroscientist, with a strong interest in software development. As a result of this, my approach to neuroscience is based on overarching principles and precise, quantitative modeling – typically analytical results followed by numerical simulations.
+
+My interests lie in normative modeling of brain circuits, where some optimality criterion based on biologically relevant tasks is used to predict neural-circuit architectures, in particular those that use biologically plausible learning rules.
+
+In what now seems like a different life, I worked in theoretical high-energy physics, focusing on various aspects of the AdS/CFT duality in string theory.
+
+I am currently an Associate Research Scientist at the [Center for Computational Neuroscience](https://www.simonsfoundation.org/flatiron/center-for-computational-neuroscience) within the [Flatiron Institute](https://www.simonsfoundation.org/flatiron).
