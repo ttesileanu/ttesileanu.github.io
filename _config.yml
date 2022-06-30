@@ -6,13 +6,13 @@ description:         > # the ">" symbol means to ignore newlines until indentati
 icon: /public/img/favicon.png # the emoji used as the favicon
 use_custom_favicon: true # if this is true, you can set favicon path instead of using default emoji
 baseurl:             ''
-url: https://ttesileanu.github.io # the base hostname & protocol for your site
+url: https://ttesileanu.com # the base hostname & protocol for your site
 email:             ttesileanu@gmail.com
 
 # About/contact
 author:
   name:              Tiberiu Teșileanu
-  url:               https://ttesileanu.github.io
+  url:               https://ttesileanu.com
   email:             ttesileanu@gmail.com
 
 # Pagination
