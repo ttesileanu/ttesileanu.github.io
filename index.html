@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Tiberiu Teșileanu &middot; a physicist working in neuroscience
+    
+  </title>
+
+  
+  <link rel="canonical" href="https://ttesileanu.com/">
+  
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://ttesileanu.com/public/css/poole.css">
+  <link rel="stylesheet" href="https://ttesileanu.com/public/css/syntax.css">
+  <link rel="stylesheet" href="https://ttesileanu.com/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://ttesileanu.com/public/css/from_alfolio.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  
+    <link rel="shortcut icon" href="/public/img/favicon.png"/>
+  
+
+  
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Neuroscience researcher with background in theoretical physics.
+</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item active" href="https://ttesileanu.com/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="https://ttesileanu.com/about">About</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="https://ttesileanu.com/blog/index.html">Blog</a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="https://ttesileanu.com/publications">Publications</a>
+        
+      
+    
+      
+    
+      
+    
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      © 2023 Tiberiu Teșileanu.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Tiberiu Teșileanu</a>
+            <small>a physicist working in neuroscience</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div id="springContainer" style="position: relative; width: 75%; margin-left: auto; margin-right: auto;">
+  <div id="sketchDescription" style="background-color: rgba(255, 255, 255, 0.98); position: absolute; left: 1em; top: 2em; right: 1em; bottom: 1em; padding: 1em; padding-top:0px; visibility: hidden; border-width: 3px; border-style: solid; overflow: scroll;">
+    <h4>Spring simulation</h4>
+    <small>
+      <table class="sketchTable">
+        <tr>
+          <td><img src="public/img/springdesc/springmasses.png" style="border: none; width: 4em"></td>
+          <td>masses have different sizes</td>
+        </tr>
+        <tr>
+          <td><img src="public/img/springdesc/springsprings.png" style="border: none; width: 4em"></td>
+          <td>spring stretch indicated by redness</td>
+        </tr>
+        <tr>
+          <td><img src="public/img/springdesc/springgravity.png" style="border: none; width: 4em"></td>
+          <td>uniform acceleration (change using arrow in the corner)</td>
+        </tr>
+        <tr>
+          <td><img src="public/img/springdesc/springdots.png" style="border: none; width: 4em"></td>
+          <td>dots move at constant velocity, except for reflections at walls</td>
+        </tr>
+        <tr>
+          <td><img src="public/img/springdesc/springviscosity.png" style="border: none; width: 4em"></td>
+          <td>masses slowed down by air resistance</td>
+        </tr>
+        <tr>
+          <td><img src="public/img/springdesc/springcollisions.png" style="border: none; width: 4em"></td>
+          <td>collisions between masses are perfectly elastic</td>
+        </tr>
+        <tr>
+          <td><img src="public/img/springdesc/springwalls.png" style="border: none; width: 4em"></td>
+          <td>collisions with walls lose energy</td>
+        </tr>
+      </table>
+    </small>
+  </div>
+  <canvas id="springCanvas"></canvas>
+</div>
+
+<script src="public/js/processing_mod.min.js"></script>
+
+<script src="public/js/springs.js"></script>
+
+<script>initSketch();</script>
+
+<p>I’m a Research Software Engineer in the CTRL team at <a href="https://www.meta.com" target="_blank" rel="noopener noreferrer">Meta</a>.</p>
+
+<p>Use the navigation menu at the top/left to learn more, or contact me using one of the links below.</p>
+
+        <!-- Social -->
+        <div class="social">
+          <div class="contact-icons">
+          <a href="mailto:%74%74%65%73%69%6C%65%61%6E%75@%67%6D%61%69%6C.%63%6F%6D" title="email"><i class="fas fa-envelope"></i></a>
+            <a href="https://scholar.google.com/citations?user=8--imZAAAAAJ" title="Google Scholar" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://github.com/ttesileanu" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ttesileanu" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/ttesileanu" title="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.quora.com/profile/Tiberiu-Tesileanu" title="Quora" target="_blank" rel="noopener noreferrer"><i class="fab fa-quora"></i></a>
+            <a href="https://stackoverflow.com/users/1352250" title="Stackoverflow" target="_blank" rel="noopener noreferrer"><i class="fab fa-stack-overflow"></i></a>
+            
+          </div>
+
+          <div class="contact-note">
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src="/public/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/public/js/common.js"></script>
+    
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+  </body>
+</html>

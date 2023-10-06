@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Publications &middot; Tiberiu Teșileanu
+    
+  </title>
+
+  
+  <link rel="canonical" href="https://ttesileanu.com/publications">
+  
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://ttesileanu.com/public/css/poole.css">
+  <link rel="stylesheet" href="https://ttesileanu.com/public/css/syntax.css">
+  <link rel="stylesheet" href="https://ttesileanu.com/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://ttesileanu.com/public/css/from_alfolio.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  
+    <link rel="shortcut icon" href="/public/img/favicon.png"/>
+  
+
+  
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Neuroscience researcher with background in theoretical physics.
+</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="https://ttesileanu.com/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="https://ttesileanu.com/about">About</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="https://ttesileanu.com/blog/index.html">Blog</a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item active" href="https://ttesileanu.com/publications">Publications</a>
+        
+      
+    
+      
+    
+      
+    
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      © 2023 Tiberiu Teșileanu.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Tiberiu Teșileanu</a>
+            <small>a physicist working in neuroscience</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="page">
+  <h1 class="page-title">Publications</h1>
+  <div class="publications">
+<ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-3 d-flex justify-content-center">
+<!-- check for dark version of the image --><!-- automatically generate dark version name by adding '-dark' before ext --><div class="photo"><img class="photo-image" src="/public/img/pub/mypub_imgs_seq_seg.png"></div>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="Tesileanu2021" class="col-sm-9">
+    <!-- Title -->
+    <div class="title"><a href="http://arxiv.org/abs/2104.11852" target="_blank" rel="noopener noreferrer">Neural circuits for dynamics-based segmentation of time series</a></div>
+    <!-- Author -->
+    <div class="author">
+<em>Tesileanu, T.</em>, Golkar, S., Nasiri, S., Sengupta, A.M., and Chklovskii, D.B.</div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>arXiv</em> 2021
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://arxiv.org/pdf/2104.11852.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>The brain must extract behaviorally relevant latent variables from the signals streamed by the sensory organs. Such latent variables are often encoded in the dynamics that generated the signal rather than in the specific realization of the waveform. Therefore, one problem faced by the brain is to segment time series based on underlying dynamics. We present two algorithms for performing this segmentation task that are biologically plausible, which we define as acting in a streaming setting and all learning rules being local. One algorithm is model based and can be derived from an optimization problem involving a mixture of autoregressive processes. This algorithm relies on feedback in the form of a prediction error and can also be used for forecasting future samples. In some brain regions, such as the retina, the feedback connections necessary to use the prediction error for learning are absent. For this case, we propose a second, model-free algorithm that uses a running estimate of the autocorrelation structure of the signal to perform the segmentation. We show that both algorithms do well when tasked with segmenting signals drawn from autoregressive models with piecewise-constant parameters. In particular, the segmentation accuracy is similar to that obtained from oracle-like methods in which the ground-truth parameters of the autoregressive models are known. We also test our methods on data sets generated by alternating snippets of voice recordings. We provide implementations of our algorithms at <a href="https://github.com/ttesileanu/bio-time-series" target="_blank" rel="noopener noreferrer">https://github.com/ttesileanu/bio-time-series</a>.</p>
+    </div>
+<!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Tesileanu2021</span><span class="p">,</span>
+  <span class="na">image</span> <span class="p">=</span> <span class="s">{mypub_imgs_seq_seg.png}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">selected</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">archiveprefix</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
+  <span class="na">arxivid</span> <span class="p">=</span> <span class="s">{2104.11852}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Tesileanu, Tiberiu and Golkar, Siavash and Nasiri, Samaneh and Sengupta, Anirvan M. and Chklovskii, Dmitri B.}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1162/neco_a_01476}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
+  <span class="na">eprint</span> <span class="p">=</span> <span class="s">{2104.11852}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{1--34}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Neural circuits for dynamics-based segmentation of time series}}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{biowta}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{http://arxiv.org/abs/2104.11852}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{https://arxiv.org/pdf/2104.11852.pdf}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-3 d-flex justify-content-center">
+<!-- check for dark version of the image --><!-- automatically generate dark version name by adding '-dark' before ext --><div class="photo"><img class="photo-image" src="/public/img/pub/mypub_imgs_eff_coding_tex.png"></div>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="Tesileanu2020" class="col-sm-9">
+    <!-- Title -->
+    <div class="title"><a href="https://elifesciences.org/articles/54347" target="_blank" rel="noopener noreferrer">Efficient coding of natural scene statistics predicts discrimination thresholds for grayscale textures</a></div>
+    <!-- Author -->
+    <div class="author">
+<em>Tesileanu, T.</em>, Conte, M.M., Briguglio, J.J., Hermundstad, A.M., Victor, J.D.<i> et al.</i>
+</div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>eLife</em> 2020
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://elifesciences.org/articles/54347.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Previously, in <a href="https://elifesciences.org/articles/3722" target="_blank" rel="noopener noreferrer">(Hermundstad et al., 2014)</a>, we showed that when sampling is limiting, the efficient coding principle leads to a “variance is salience” hypothesis, and that this hypothesis accounts for visual sensitivity to binary image statistics. Here, using extensive new psychophysical data and image analysis, we show that this hypothesis accounts for visual sensitivity to a large set of grayscale image statistics at a striking level of detail, and also identify the limits of the prediction. We define a 66-dimensional space of local grayscale light-intensity correlations, and measure the relevance of each direction to natural scenes. The “variance is salience” hypothesis predicts that two-point correlations are most salient, and predicts their relative salience. We tested these predictions in a texture-segregation task using un-natural, synthetic textures. As predicted, correlations beyond second order are not salient, and predicted thresholds for over 300 second-order correlations match psychophysical thresholds closely (median fractional error &lt;0.13).</p>
+    </div>
+<!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Tesileanu2020</span><span class="p">,</span>
+  <span class="na">image</span> <span class="p">=</span> <span class="s">{mypub_imgs_eff_coding_tex.png}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Tesileanu, Tiberiu and Conte, Mary M. and Briguglio, John J. and Hermundstad, Ann M. and Victor, Jonathan D. and Balasubramanian, Vijay}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.7554/ELIFE.54347}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{eLife}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{1--35}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Efficient coding of natural scene statistics predicts discrimination thresholds for grayscale textures}}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{9}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{viztex}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://elifesciences.org/articles/54347}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{https://elifesciences.org/articles/54347.pdf}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-3 d-flex justify-content-center">
+<!-- check for dark version of the image --><!-- automatically generate dark version name by adding '-dark' before ext --><div class="photo"><img class="photo-image" src="/public/img/pub/mypub_imgs_eff_coding_smell.png"></div>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="Tesileanu2019" class="col-sm-9">
+    <!-- Title -->
+    <div class="title"><a href="https://elifesciences.org/articles/39279" target="_blank" rel="noopener noreferrer">Adaptation of olfactory receptor abundances for efficient coding</a></div>
+    <!-- Author -->
+    <div class="author">
+<em>Tesileanu, T.</em>, Cocco, S., Monasson, R., and Balasubramanian, V.</div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>eLife</em> 2019
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://elifesciences.org/articles/39279.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Olfactory receptor usage is highly heterogeneous, with some receptor types being orders of magnitude more abundant than others. We propose an explanation for this striking fact: the receptor distribution is tuned to maximally represent information about the olfactory environment in a regime of efficient coding that is sensitive to the global context of correlated sensor responses. This model predicts that in mammals, where olfactory sensory neurons are replaced regularly, receptor abundances should continuously adapt to odor statistics. Experimentally, increased exposure to odorants leads variously, but reproducibly, to increased, decreased, or unchanged abundances of different activated receptors. We demonstrate that this diversity of effects is required for efficient coding when sensors are broadly correlated, and provide an algorithm for predicting which olfactory receptors should increase or decrease in abundance following specific environmental changes. Finally, we give simple dynamical rules for neural birth and death processes that might underlie this adaptation.</p>
+    </div>
+<!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Tesileanu2019</span><span class="p">,</span>
+  <span class="na">image</span> <span class="p">=</span> <span class="s">{mypub_imgs_eff_coding_smell.png}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">archiveprefix</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
+  <span class="na">arxivid</span> <span class="p">=</span> <span class="s">{1801.09300}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Tesileanu, Tiberiu and Cocco, Simona and Monasson, Remi and Balasubramanian, Vijay}</span><span class="p">,</span>
+  <span class="na">eprint</span> <span class="p">=</span> <span class="s">{1801.09300}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{eLife}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{e39279}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Adaptation of olfactory receptor abundances for efficient coding}}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{8}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2019}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{orn}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://elifesciences.org/articles/39279}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{https://elifesciences.org/articles/39279.pdf}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-3 d-flex justify-content-center">
+<!-- check for dark version of the image --><!-- automatically generate dark version name by adding '-dark' before ext --><div class="photo"><img class="photo-image" src="/public/img/pub/mypub_imgs_crispr.png"></div>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="Bradde2017" class="col-sm-9">
+    <!-- Title -->
+    <div class="title"><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005486" target="_blank" rel="noopener noreferrer">Dynamics of adaptive immunity against phage in bacterial populations</a></div>
+    <!-- Author -->
+    <div class="author">Bradde, S., Vucelja, M., <em>Tesileanu, T.</em>, and Balasubramanian, V.</div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>PLoS Computational Biology</em> 2017
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005486&amp;type=printable" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>The CRISPR (clustered regularly interspaced short palindromic repeats) mechanism allows bacteria to adaptively defend against phages by acquiring short genomic sequences (spacers) that target specific sequences in the viral genome. We propose a population dynamical model where immunity can be both acquired and lost. The model predicts regimes where bacterial and phage populations can co-exist, others where the populations exhibit damped oscillations, and still others where one population is driven to extinction. Our model considers two key parameters: (1) ease of acquisition and (2) spacer effectiveness in conferring immunity. Analytical calculations and numerical simulations show that if spacers differ mainly in ease of acquisition, or if the probability of acquiring them is sufficiently high, bacteria develop a diverse population of spacers. On the other hand, if spacers differ mainly in their effectiveness, their final distribution will be highly peaked, akin to a “winner-take-all” scenario, leading to a specialized spacer distribution. Bacteria can interpolate between these limiting behaviors by actively tuning their overall acquisition probability.</p>
+    </div>
+<!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Bradde2017</span><span class="p">,</span>
+  <span class="na">image</span> <span class="p">=</span> <span class="s">{mypub_imgs_crispr.png}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Bradde, Serena and Vucelja, Marija and Tesileanu, Tiberiu and Balasubramanian, Vijay}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1371/journal.pcbi.1005486}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{PLoS Computational Biology}</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{4}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Dynamics of adaptive immunity against phage in bacterial populations}}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{13}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2017}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{crispr}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005486}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005486&amp;type=printable}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-3 d-flex justify-content-center">
+<!-- check for dark version of the image --><!-- automatically generate dark version name by adding '-dark' before ext --><div class="photo"><img class="photo-image" src="/public/img/pub/mypub_imgs_two_stage.png"></div>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="Tesileanu2017" class="col-sm-9">
+    <!-- Title -->
+    <div class="title"><a href="https://elifesciences.org/articles/20944" target="_blank" rel="noopener noreferrer">Rules and mechanisms for efficient two-stage learning in neural circuits</a></div>
+    <!-- Author -->
+    <div class="author">
+<em>Tesileanu, T.</em>, Ölveczky, B., and Balasubramanian, V.</div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>eLife</em> 2017
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://elifesciences.org/articles/20944.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Trial-and-error learning requires evaluating variable actions and reinforcing successful variants. In songbirds, vocal exploration is induced by LMAN, the output of a basal ganglia-related circuit that also contributes a corrective bias to the vocal output. This bias is gradually consolidated in RA, a motor cortex analogue downstream of LMAN. We develop a new model of such two-stage learning. Using stochastic gradient descent, we derive how the activity in ‘tutor’ circuits (e.g., LMAN) should match plasticity mechanisms in ‘student’ circuits (e.g., RA) to achieve efficient learning. We further describe a reinforcement learning framework through which the tutor can build its teaching signal. We show that mismatches between the tutor signal and the plasticity mechanism can impair learning. Applied to birdsong, our results predict the temporal structure of the corrective bias from LMAN given a plasticity rule in RA. Our framework can be applied predictively to other paired brain areas showing two-stage learning.</p>
+    </div>
+<!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Tesileanu2017</span><span class="p">,</span>
+  <span class="na">image</span> <span class="p">=</span> <span class="s">{mypub_imgs_two_stage.png}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Tesileanu, Tiberiu and {\"{O}}lveczky, Bence and Balasubramanian, Vijay}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.7554/eLife.20944}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{eLife}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Rules and mechanisms for efficient two-stage learning in neural circuits}}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{6}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2017}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{birdsong}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://elifesciences.org/articles/20944}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{https://elifesciences.org/articles/20944.pdf}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-3 d-flex justify-content-center">
+<!-- check for dark version of the image --><!-- automatically generate dark version name by adding '-dark' before ext --><div class="photo"><img class="photo-image" src="/public/img/pub/mypub_imgs_protein_sectors.png"></div>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="Tesileanu2015" class="col-sm-9">
+    <!-- Title -->
+    <div class="title"><a href="http://dx.plos.org/10.1371/journal.pcbi.1004091" target="_blank" rel="noopener noreferrer">Protein Sectors: Statistical Coupling Analysis versus Conservation</a></div>
+    <!-- Author -->
+    <div class="author">
+<em>Tesileanu, T.</em>, Colwell, L.J., and Leibler, S.</div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>PLOS Computational Biology</em> 2015
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1004091&amp;type=printable" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Statistical coupling analysis (SCA) is a method for analyzing multiple sequence alignments that was used to identify groups of coevolving residues termed “sectors”. The method applies spectral analysis to a matrix obtained by combining correlation information with sequence conservation. It has been asserted that the protein sectors identified by SCA are functionally significant, with different sectors controlling different biochemical properties of the protein. Here we reconsider the available experimental data and note that it involves almost exclusively proteins with a single sector. We show that in this case sequence conservation is the dominating factor in SCA, and can alone be used to make statistically equivalent functional predictions. Therefore, we suggest shifting the experimental focus to proteins for which SCA identifies several sectors. Correlations in protein alignments, which have been shown to be informative in a number of independent studies, would then be less dominated by equence conservation.</p>
+    </div>
+<!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Tesileanu2015</span><span class="p">,</span>
+  <span class="na">image</span> <span class="p">=</span> <span class="s">{mypub_imgs_protein_sectors.png}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">selected</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Tesileanu, Tiberiu and Colwell, Lucy J. and Leibler, Stanislas}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1371/journal.pcbi.1004091}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{PLOS Computational Biology}</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{2}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{e1004091}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Protein Sectors: Statistical Coupling Analysis versus Conservation}}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{protalign}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{http://dx.plos.org/10.1371/journal.pcbi.1004091}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1004091&amp;type=printable}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{11}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2015}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-3 d-flex justify-content-center">
+<!-- check for dark version of the image --><!-- automatically generate dark version name by adding '-dark' before ext --><div class="photo"><img class="photo-image" src="/public/img/pub/mypub_imgs_mpra.png"></div>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="Melnikov2012" class="col-sm-9">
+    <!-- Title -->
+    <div class="title"><a href="https://www.nature.com/articles/nbt.2137" target="_blank" rel="noopener noreferrer">Systematic dissection and optimization of inducible enhancers in human cells using a massively parallel reporter assay</a></div>
+    <!-- Author -->
+    <div class="author">Melnikov, A., Murugan, A., Zhang, X., <em>Tesileanu, T.</em>, Wang, L.<i> et al.</i>
+</div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>Nature Biotechnology</em> Feb 2012
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Learning to read and write the transcriptional regulatory code is of central importance to progress in genetic analysis and engineering. Here we describe a massively parallel reporter assay (MPRA) that facilitates the systematic dissection of transcriptional regulatory elements. In MPRA, microarray-synthesized DNA regulatory elements and unique sequence tags are cloned into plasmids to generate a library of reporter constructs. These constructs are transfected into cells and tag expression is assayed by high-throughput sequencing. We apply MPRA to compare ≥27,000 variants of two inducible enhancers in human cells: a synthetic cAMP-regulated enhancer and the virus-inducible interferon-β enhancer. We first show that the resulting data define accurate maps of functional transcription factor binding sites in both enhancers at single-nucleotide resolution. We then use the data to train quantitative sequence-activity models (QSAMs) of the two enhancers. We show that QSAMs from two cellular states can be combined to design enhancer variants that optimize potentially conflicting objectives, such as maximizing induced activity while minimizing basal activity.</p>
+    </div>
+<!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Melnikov2012</span><span class="p">,</span>
+  <span class="na">image</span> <span class="p">=</span> <span class="s">{mypub_imgs_mpra.png}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">selected</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Melnikov, Alexandre and Murugan, Anand and Zhang, Xiaolan and Tesileanu, Tiberiu and Wang, Li and Rogov, Peter and Feizi, Soheil and Gnirke, Andreas and Callan, Curtis G. and Kinney, Justin B. and Kellis, Manolis and Lander, Eric S. and Mikkelsen, Tarjei S.}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1038/nbt.2137}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Nature Biotechnology}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">feb</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{3}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{271--277}</span><span class="p">,</span>
+  <span class="na">pmid</span> <span class="p">=</span> <span class="s">{22371084}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved.}</span><span class="p">,</span>
+  <span class="na">shorttitle</span> <span class="p">=</span> <span class="s">{Nat Biotech}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{transcription}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Systematic dissection and optimization of inducible enhancers in human cells using a massively parallel reporter assay}}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://www.nature.com/articles/nbt.2137}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{30}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2012}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-3 d-flex justify-content-center">
+<!-- check for dark version of the image --><!-- automatically generate dark version name by adding '-dark' before ext --><div class="photo"><img class="photo-image" src="/public/img/pub/mypub_imgs_phd_thesis.png"></div>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="Tesileanu2011" class="col-sm-9">
+    <!-- Title -->
+    <div class="title"><a href="https://ui.adsabs.harvard.edu/abs/2011PhDT.......103T/abstract" target="_blank" rel="noopener noreferrer">Charged black holes and the AdS/CFT correspondence</a></div>
+    <!-- Author -->
+    <div class="author"><em>Tesileanu, T.</em></div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>PhD thesis, Princeton University</em> Feb 2011
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="/public/pdf/phdthesis.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>The AdS/CFT duality is an equivalence between string theory and gauge theory. The duality allows one to use calculations done in classical gravity to derive results in strongly-coupled field theories. This thesis explores several applications of the duality that have some relevance to condensed matter physics. In the first of these applications, it is shown that a large class of strongly-coupled  (3+1)-dimensional conformal field theories undergo a superfluid phase transition in which a certain chiral primary operator develops a non-zero expectation value at low temperatures. A suggestion is made for the identity of the condensing operator in the field theory. In a different application, the conifold theory, an \(\mathrm {SU}(N) \times \mathrm{SU}(N)\) gauge theory, is studied at nonzero chemical potential for baryon number density. In the low-temperature limit, the near-horizon geometry of the dual supergravity solution becomes a warped product \(\mathrm{AdS}_2 \times \mathbb R^3\times T^{1,1}\), with logarithmic warp factors. This encodes a type of emergent quantum near-criticality in the field theory. A similar construction is analyzed in the context of M theory. This construction is based on branes wrapped around topologically nontrivial cycles of the geometry. Several non-supersymmetric solutions are found, which pass a number of stability checks.  Reducing one of the solutions to type IIA string theory, and T-dualizing to type IIB yields a product of a squashed Sasaki-Einstein manifold with an extremal BTZ black hole. Possible field theory interpretations are discussed.</p>
+    </div>
+<!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@phdthesis</span><span class="p">{</span><span class="nl">Tesileanu2011</span><span class="p">,</span>
+  <span class="na">image</span> <span class="p">=</span> <span class="s">{mypub_imgs_phd_thesis.png}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Tesileanu, Tiberiu}</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{September}</span><span class="p">,</span>
+  <span class="na">school</span> <span class="p">=</span> <span class="s">{Princeton University}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Charged black holes and the AdS/CFT correspondence}}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2011}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://ui.adsabs.harvard.edu/abs/2011PhDT.......103T/abstract}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{phdthesis.pdf}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-3 d-flex justify-content-center">
+<!-- check for dark version of the image --><!-- automatically generate dark version name by adding '-dark' before ext --><div class="photo"><img class="photo-image" src="/public/img/pub/mypub_imgs_strings_quiver.png"></div>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="Herzog2010" class="col-sm-9">
+    <!-- Title -->
+    <div class="title"><a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.83.046001" target="_blank" rel="noopener noreferrer">Multi-Matrix Models and Tri-Sasaki Einstein Spaces</a></div>
+    <!-- Author -->
+    <div class="author">Herzog, C.P., Klebanov, I.R., Pufu, S.S., and <em>Tesileanu, T.</em>
+</div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>Physical Review D</em> Nov 2011
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://arxiv.org/pdf/1011.5487.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Localization methods reduce the path integrals in \(\mathcal N \ge 2\) supersymmetric Chern-Simons gauge theories on \(S^3\) to multi-matrix integrals. A recent evaluation of such a two-matrix integral for the \(\mathcal N=6\) superconformal \(\mathrm U(N) \times \mathrm U(N)\) ABJM theory produced detailed agreement with the AdS/CFT correspondence, explaining, in particular the \(N^{3/2}\) scaling of the free energy. We study a class of \(p\)-matrix integrals describing \(\mathcal N=3\) superconformal \(\mathrm U(N)^p\) Chern-Simons gauge theories. We present a simple method that allows us to evaluate the eigenvalue densities and the free energies in the large \(N\) limit keeping the Chern-Simons levels \(k_i\) fixed. The dual M-theory backgrounds are \(\mathrm {AdS}_4 \times Y\), where \(Y\) are seven-dimensional tri-Sasaki Einstein spaces specified by the \(k_i\). The gravitational free energy scales inversely with the square root of the volume of \(Y\). We find a general formula for the \(p\)-matrix free energies that agrees with the available results for volumes of the tri-Sasaki Einstein spaces \(Y\), thus providing a thorough test of the corresponding \(\mathrm {AdS}_4/\mathrm{CFT}_3\) dualities. This formula is consistent with the Seiberg duality conjectured for Chern-Simons gauge theories.</p>
+    </div>
+<!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Herzog2010</span><span class="p">,</span>
+  <span class="na">image</span> <span class="p">=</span> <span class="s">{mypub_imgs_strings_quiver.png}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">archiveprefix</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
+  <span class="na">arxivid</span> <span class="p">=</span> <span class="s">{1011.5487}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Herzog, Christopher P. and Klebanov, Igor R. and Pufu, Silviu S. and Tesileanu, Tiberiu}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1103/PhysRevD.83.046001}</span><span class="p">,</span>
+  <span class="na">eprint</span> <span class="p">=</span> <span class="s">{1011.5487}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Physical Review D}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">nov</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{046001}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Multi-Matrix Models and Tri-Sasaki Einstein Spaces}}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://journals.aps.org/prd/abstract/10.1103/PhysRevD.83.046001}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{https://arxiv.org/pdf/1011.5487.pdf}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{83}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2011}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-3 d-flex justify-content-center">
+<!-- check for dark version of the image --><!-- automatically generate dark version name by adding '-dark' before ext --><div class="photo"><img class="photo-image" src="/public/img/pub/mypub_imgs_top_charge.png"></div>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="Klebanov2010" class="col-sm-9">
+    <!-- Title -->
+    <div class="title"><a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.81.125011" target="_blank" rel="noopener noreferrer">Membranes with Topological Charge and AdS4/CFT3 Correspondence</a></div>
+    <!-- Author -->
+    <div class="author">Klebanov, I.R., Pufu, S.S., and <em>Tesileanu, T.</em>
+</div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>Physical Review D</em> Apr 2010
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://journals.aps.org/prd/pdf/10.1103/PhysRevD.81.125011" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>If the second Betti number \(b_2\) of a Sasaki-Einstein manifold \(Y^7\) does not vanish, then M-theory on \(\mathrm {AdS}_4 \times Y^7\) possesses “topological” \(\mathrm U(1)^b_2\) gauge symmetry. The corresponding Abelian gauge fields come from three-form fluctuations with one index in \(\mathrm {AdS}_4\) and the other two in \(Y^7\). We find black membrane solutions carrying one of these \(\mathrm U(1)\) charges. In the zero temperature limit, our solutions interpolate between \(\mathrm {AdS_4} \times Y^7\) in the UV and \(\mathrm {AdS_2} \times \mathbb R^2 \times \text{squashed }Y^7\) in the IR. In fact, the \(\mathrm {AdS}_2 \times \mathbb R^2 \times \text{squashed }Y^7\) background is by itself a solution of the supergravity equations of motion. These solutions do not appear to preserve any supersymmetry. We search for their possible instabilities and do not find any. We also discuss the meaning of our charged membrane backgrounds in a dual quiver Chern-Simons gauge theory with a global \(\mathrm U(1)\) charge density. Finally, we present a simple analytic solution which has the same IR but different UV behavior. We reduce this solution to type IIA string theory, and perform T-duality to type IIB. The type IIB metric turns out to be a product of the squashed \(Y^7\) and the extremal BTZ black hole. We discuss an interpretation of this type IIB background in terms of the (1+1)-dimensional CFT on D3-branes partially wrapped over the squashed \(Y^7\).</p>
+    </div>
+<!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Klebanov2010</span><span class="p">,</span>
+  <span class="na">image</span> <span class="p">=</span> <span class="s">{mypub_imgs_top_charge.png}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">archiveprefix</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
+  <span class="na">arxivid</span> <span class="p">=</span> <span class="s">{1004.0413}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Klebanov, Igor R. and Pufu, Silviu S. and Tesileanu, Tiberiu}</span><span class="p">,</span>
+  <span class="na">eprint</span> <span class="p">=</span> <span class="s">{1004.0413}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Physical Review D}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">apr</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{125011}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Membranes with Topological Charge and AdS4/CFT3 Correspondence}}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://journals.aps.org/prd/abstract/10.1103/PhysRevD.81.125011}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{https://journals.aps.org/prd/pdf/10.1103/PhysRevD.81.125011}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{81}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2010}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-3 d-flex justify-content-center">
+<!-- check for dark version of the image --><!-- automatically generate dark version name by adding '-dark' before ext --><div class="photo"><img class="photo-image" src="/public/img/pub/mypub_imgs_qcrit.png"></div>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="Herzog2009" class="col-sm-9">
+    <!-- Title -->
+    <div class="title"><a href="https://link.springer.com/article/10.1007/JHEP03(2010)093" target="_blank" rel="noopener noreferrer">Emergent Quantum Near-Criticality from Baryonic Black Branes</a></div>
+    <!-- Author -->
+    <div class="author">Herzog, C.P., Klebanov, I.R., Pufu, S.S., and <em>Tesileanu, T.</em>
+</div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>JHEP</em> Nov 2010
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://arxiv.org/pdf/0911.0400.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>We find new black 3-brane solutions describing the “conifold gauge theory” at nonzero temperature and baryonic chemical potential. Of particular interest is the low-temperature limit where we find a new kind of weakly curved near-horizon geometry; it is a warped product \(\mathrm {AdS}_2 \times \mathbb R^3 \times T^{1,1}\) with warp factors that are powers of the logarithm of the AdS radius. Thus, our solution encodes a new type of emergent quantum near-criticality. We carry out some stability checks for our solutions. We also set up a consistent ansatz for baryonic black 2-branes of M-theory that are asymptotic to \(\mathrm {AdS}_4 \times Q^{1,1,1}\).</p>
+    </div>
+<!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Herzog2009</span><span class="p">,</span>
+  <span class="na">image</span> <span class="p">=</span> <span class="s">{mypub_imgs_qcrit.png}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">archiveprefix</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
+  <span class="na">arxivid</span> <span class="p">=</span> <span class="s">{0911.0400}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Herzog, Christopher P. and Klebanov, Igor R. and Pufu, Silviu S. and Tesileanu, Tiberiu}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1007/JHEP03(2010)093}</span><span class="p">,</span>
+  <span class="na">eprint</span> <span class="p">=</span> <span class="s">{0911.0400}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{JHEP}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">nov</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{093}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Emergent Quantum Near-Criticality from Baryonic Black Branes}}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://link.springer.com/article/10.1007/JHEP03(2010)093}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{https://arxiv.org/pdf/0911.0400.pdf}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{1003}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2010}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-3 d-flex justify-content-center">
+<!-- check for dark version of the image --><!-- automatically generate dark version name by adding '-dark' before ext --><div class="photo"><img class="photo-image" src="/public/img/pub/mypub_imgs_supercond.png"></div>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="Gubser2009" class="col-sm-9">
+    <!-- Title -->
+    <div class="title"><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.103.141601" target="_blank" rel="noopener noreferrer">Superconductors from Superstrings</a></div>
+    <!-- Author -->
+    <div class="author">Gubser, S.S., Herzog, C.P., Pufu, S.S., and <em>Tesileanu, T.</em>
+</div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>Physical Review Letters</em> Jul 2009
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.103.141601" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>We establish that in a large class of strongly coupled 3+1 dimensional \(\mathcal N=1\) quiver conformal field theories with gravity duals, adding a chemical potential for the \(R\)-charge leads to the existence of superfluid states in which a chiral primary operator of the schematic form \(\mathcal O = λλ^+ W\) condenses. Here \(λ\) is a gluino and \(W\) is the superpotential. Our argument is based on the construction of a consistent truncation of type IIB supergravity that includes a \(\mathrm U(1)\) gauge field and a complex scalar.</p>
+    </div>
+<!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Gubser2009</span><span class="p">,</span>
+  <span class="na">image</span> <span class="p">=</span> <span class="s">{mypub_imgs_supercond.png}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">archiveprefix</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
+  <span class="na">arxivid</span> <span class="p">=</span> <span class="s">{0907.3510}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Gubser, Steven S. and Herzog, Christopher P. and Pufu, Silviu S. and Tesileanu, Tiberiu}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1103/PhysRevLett.103.141601}</span><span class="p">,</span>
+  <span class="na">eprint</span> <span class="p">=</span> <span class="s">{0907.3510}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Physical Review Letters}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">jul</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{141601}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Superconductors from Superstrings}}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.103.141601}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.103.141601}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{103}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2009}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-3 d-flex justify-content-center">
+<!-- check for dark version of the image --><!-- automatically generate dark version name by adding '-dark' before ext --><div class="photo"><img class="photo-image" src="/public/img/pub/mypub_imgs_argon.png"></div>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="Acosta-Kane2008" class="col-sm-9">
+    <!-- Title -->
+    <div class="title"><a href="https://iopscience.iop.org/article/10.1088/1742-6596/120/4/042015/meta" target="_blank" rel="noopener noreferrer">Discovery of underground argon with low level of radioactive 39Ar and possible applications to WIMP dark matter detectors</a></div>
+    <!-- Author -->
+    <div class="author">Acosta-Kane, D., Acciarri, R., Amaize, O., Antonello, M., Baibussinov, B.<i> et al.</i>
+</div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>Nuclear Instruments and Methods in Physics Research, Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</em> Jul 2008
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://iopscience.iop.org/article/10.1088/1742-6596/120/4/042015/pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>We report on the first measurement of <sup>39</sup>Ar in argon from underground natural gas reservoirs. The gas stored in the US National Helium Reserve was found to contain a low level of <sup>39</sup>Ar. The ratio of <sup>39</sup>Ar to stable argon was measured to be ≤ 4 × 10<sup>-17</sup> (84% C.L.), less than 5% the value in atmospheric argon (<sup>39</sup>Ar / Ar = 8 × 10<sup>-16</sup>). The total quantity of argon currently stored in the National Helium Reserve is estimated at 1000 tons. <sup>39</sup>Ar represents one of the most important backgrounds in argon detectors for WIMP dark matter searches. The findings reported demonstrate the possibility of constructing large multi-ton argon detectors with low radioactivity suitable for WIMP dark matter searches.</p>
+    </div>
+<!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Acosta-Kane2008</span><span class="p">,</span>
+  <span class="na">image</span> <span class="p">=</span> <span class="s">{mypub_imgs_argon.png}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Acosta-Kane, D. and Acciarri, R. and Amaize, O. and Antonello, M. and Baibussinov, B. and {Baldo Ceolin}, M. and Ballentine, C.J. and Bansal, R. and Basgall, L. and Bazarko, A. and Benetti, P. and Benziger, J. and Burgers, A. and Calaprice, F. and Calligarich, E. and Cambiaghi, M. and Canci, N. and Carbonara, F. and Cassidy, M. and Cavanna, F. and Centro, S. and Chavarria, A. and Cheng, D. and Cocco, A.G. and Collon, P. and Dalnoki-Veress, F. and de Haas, E. and {Di Pompeo}, F. and Fiorillo, G. and Fitch, F. and Gallo, V. and Galbiati, C. and Gaull, M. and Gazzana, S. and Grandi, L. and Goretti, A. and Highfill, R. and Highfill, T. and Hohman, T. and Ianni, Al. and Ianni, An. and LaCava, A. and Laubenstein, M. and Lee, H.Y. and Leung, M. and Loer, B. and Loosli, H.H. and Lyons, B. and Marks, D. and McCarty, K. and Meng, G. and Montanari, C. and Mukhopadhyay, S. and Nelson, A. and Palamara, O. and Pandola, L. and Pietropaolo, F. and Pivonka, T. and Pocar, A. and Purtschert, R. and Rappoldi, A. and Raselli, G. and Resnati, F. and Robertson, D. and Roncadelli, M. and Rossella, M. and Rubbia, C. and Ruderman, J. and Saldanha, R. and Schmitt, C. and Scott, R. and Segreto, E. and Shirley, A. and Szelc, A.M. and Tartaglia, R. and Tesileanu, Tiberiu and Ventura, S. and Vignoli, C. and Visnjic, C. and Vondrasek, R. and Yushkov, A.}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1016/j.nima.2007.12.032}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Nuclear Instruments and Methods in Physics Research, Section A: Accelerators, Spectrometers, Detectors and Associated Equipment}</span><span class="p">,</span>
+  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{Cryogenic noble gases,Dark matter,Low background detectors}</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{1}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Discovery of underground argon with low level of radioactive 39Ar and possible applications to WIMP dark matter detectors}}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{587}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2008}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://iopscience.iop.org/article/10.1088/1742-6596/120/4/042015/meta}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{https://iopscience.iop.org/article/10.1088/1742-6596/120/4/042015/pdf}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-3 d-flex justify-content-center">
+<!-- check for dark version of the image --><!-- automatically generate dark version name by adding '-dark' before ext --><div class="photo"><img class="photo-image" src="/public/img/pub/mypub_imgs_languages.png"></div>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="Tesileanu2005" class="col-sm-9">
+    <!-- Title -->
+    <div class="title"><a href="https://www.worldscientific.com/doi/abs/10.1142/S0129183106008765" target="_blank" rel="noopener noreferrer">Competition of Languages and their Hamming Distance</a></div>
+    <!-- Author -->
+    <div class="author">
+<em>Tesileanu, T.</em>, and Meyer-Ortmanns, H.</div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>International Journal of Modern Physics C</em> Aug 2006
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://arxiv.org/pdf/physics/0508229.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>We consider the spreading and competition of languages that are spoken by a population of individuals. The individuals can change their mother tongue during their lifespan, pass on their language to their offspring and finally die. The languages are described by bitstrings, their mutual difference is expressed in terms of their Hamming distance. Language evolution is determined by mutation and adaptation rates. In particular we consider the case where the replacement of a language by another one is determined by their mutual Hamming distance. As a function of the mutation rate we find a sharp transition between a scenario with one dominant language and fragmentation into many language clusters. The transition is also reflected in the Hamming distance between the two languages with the largest and second to largest number of speakers. We also consider the case where the population is localized on a square lattice and the interaction of individuals is restricted to a certain geometrical domain. Here it is again the Hamming distance that plays an essential role in the final fate of a language of either surviving or being extinct.</p>
+    </div>
+<!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Tesileanu2005</span><span class="p">,</span>
+  <span class="na">image</span> <span class="p">=</span> <span class="s">{mypub_imgs_languages.png}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">archiveprefix</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
+  <span class="na">arxivid</span> <span class="p">=</span> <span class="s">{physics/0508229}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Tesileanu, Tiberiu and Meyer-Ortmanns, Hildegard}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1142/S0129183106008765}</span><span class="p">,</span>
+  <span class="na">eprint</span> <span class="p">=</span> <span class="s">{0508229}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{International Journal of Modern Physics C}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">aug</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{3}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Competition of Languages and their Hamming Distance}}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://www.worldscientific.com/doi/abs/10.1142/S0129183106008765}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{https://arxiv.org/pdf/physics/0508229.pdf}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{17}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2006}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-3 d-flex justify-content-center">
+<!-- check for dark version of the image --><!-- automatically generate dark version name by adding '-dark' before ext --><div class="photo"><img class="photo-image" src="/public/img/pub/mypub_imgs_dipole.png"></div>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="Helling2006" class="col-sm-9">
+    <!-- Title -->
+    <div class="title"><a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.74.063004" target="_blank" rel="noopener noreferrer">CMB statistical anisotropy, multipole vectors and the influence of the dipole</a></div>
+    <!-- Author -->
+    <div class="author">Helling, R.C., Schupp, P., and <em>Tesileanu, T.</em>
+</div>
+
+    <!-- Journal/Book title and date -->
+    <div class="periodical">
+      <em>Physical Review D</em> Mar 2006
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      <a href="https://journals.aps.org/prd/pdf/10.1103/PhysRevD.74.063004" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>A simple algorithm which gives the multipole vectors in terms of the roots of a polynomial is given. We find that the reported alignmet of the low \(\ell\) multipole vectors can be summarised as an anti-alignmet of these with the dipole direction. This anti-alignment is not only present in \(\ell=2\) and 3 but also for \(\ell=5\) and higher. This alignment is likely due to non-linearity in the data processing. Our results are based on the three year WMAP data, we also list corresponding results for the first year data.</p>
+    </div>
+<!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">Helling2006</span><span class="p">,</span>
+  <span class="na">image</span> <span class="p">=</span> <span class="s">{mypub_imgs_dipole.png}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">archiveprefix</span> <span class="p">=</span> <span class="s">{arXiv}</span><span class="p">,</span>
+  <span class="na">arxivid</span> <span class="p">=</span> <span class="s">{astro-ph/0603594}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Helling, Robert C. and Schupp, Peter and Tesileanu, Tiberiu}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1103/PhysRevD.74.063004}</span><span class="p">,</span>
+  <span class="na">eprint</span> <span class="p">=</span> <span class="s">{0603594}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Physical Review D}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">mar</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{063004}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{CMB statistical anisotropy, multipole vectors and the influence of the dipole}}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://journals.aps.org/prd/abstract/10.1103/PhysRevD.74.063004}</span><span class="p">,</span>
+  <span class="na">pdf</span> <span class="p">=</span> <span class="s">{https://journals.aps.org/prd/pdf/10.1103/PhysRevD.74.063004}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{74}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2006}</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+  </div>
+</div>
+</li>
+</ol>
+(generated by <a href="https://github.com/inukshuk/jekyll-scholar" target="_blank" rel="noopener noreferrer">jekyll-scholar</a>)
+</div>
+
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src="/public/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/public/js/common.js"></script>
+    
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+  </body>
+</html>

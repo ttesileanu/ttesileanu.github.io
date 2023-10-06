@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://ttesileanu.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ttesileanu.com/" rel="alternate" type="text/html" /><updated>2023-10-06T19:38:57+00:00</updated><id>https://ttesileanu.com/feed.xml</id><title type="html">Tiberiu Teșileanu</title><subtitle>Neuroscience researcher with background in theoretical physics.
+</subtitle><author><name>Tiberiu Teșileanu</name><email>ttesileanu@gmail.com</email></author><entry><title type="html">A javascript real-time neural simulation</title><link href="https://ttesileanu.com/2022/06/29/js-neurons.html" rel="alternate" type="text/html" title="A javascript real-time neural simulation" /><published>2022-06-29T00:00:00+00:00</published><updated>2022-06-29T00:00:00+00:00</updated><id>https://ttesileanu.com/2022/06/29/js-neurons</id><content type="html" xml:base="https://ttesileanu.com/2022/06/29/js-neurons.html"><![CDATA[<p>I wrote this around 2015-2016, when I first realized that Javascript code can run <em>very</em> fast.</p>
+
+<p>Run your mouse over the neurons of the network to seed the activity. These are <a href="https://en.wikipedia.org/wiki/Biological_neuron_model#Leaky_integrate-and-fire">integrate-and-fire neurons</a> with nearest-neighbor connections, so the activation propagates in waves. The connections also follow a <a href="http://www.scholarpedia.org/article/Spike-timing_dependent_plasticity">synaptic timing-dependent plasticity (STDP) learning rule</a>, so interesting patterns may emerge.</p>
+
+<div id="netContainer" style="position: relative; width: 75%; margin-left: auto; margin-right: auto;">
+    <div id="sketchDescription" style="background-color: rgba(255, 255, 255, 0.98); position: absolute; left: 1em; top: 2em; right: 1em; bottom: 1em; padding: 1em; padding-top:0px; visibility: hidden; border-width: 3px; border-style: solid; overflow: scroll;">
+        <h4>Neural net simulation</h4>
+        <small>
+            <table class="sketchTable">
+                <tr>
+                <td><img src="/public/img/netdesc/netnodes.png" style="border: none; width: 4em" /></td>
+                <td>each blob is a leaky integrate-and-fire neuron</td>
+                </tr>
+                <tr>
+                <td><img src="/public/img/netdesc/netvoltage.png" style="border: none; width: 4em" /></td>
+                <td>redness indicates membrane voltage and spiking</td>
+                </tr>
+                <tr>
+                <td><img src="/public/img/netdesc/netrandom.png" style="border: none; width: 4em" /></td>
+                <td>neurons are noisy</td>
+                </tr>
+                <tr>
+                <td><img src="/public/img/netdesc/netsynapses.png" style="border: none; width: 4em" /></td>
+                <td>there are synapses with all 8 neighbors</td>
+                </tr>
+                <tr>
+                <td><img src="/public/img/netdesc/netstdp.png" style="border: none; width: 4em" /></td>
+                <td>synapses are plastic with a timing-dependent rule</td>
+                </tr>
+                <tr>
+                <td><img src="/public/img/netdesc/netmouse.png" style="border: none; width: 4em" /></td>
+                <td>use mouse or touch to input a Gaussian-profile current into the net</td>
+                </tr>
+            </table>
+        </small>
+    </div>
+    <canvas id="netCanvas"></canvas>
+</div>
+
+<script src="/public/js/processing_mod.min.js"></script>
+
+<script src="/public/js/net.js"></script>
+
+<script>initSketch();</script>]]></content><author><name>Tiberiu Teșileanu</name><email>ttesileanu@gmail.com</email></author><summary type="html"><![CDATA[I wrote this around 2015-2016, when I first realized that Javascript code can run very fast.]]></summary></entry></feed>
